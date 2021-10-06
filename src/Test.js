@@ -1,20 +1,18 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import "./TestStyle.css";
+const clickHandler = () => {
+  alert("Click");
+};
 const Test = () => {
-  var name = "Hamza Abdous";
-  var message = "this is my message";
   return (
     <>
-      <Person name={name} />
-      <Message message={message} />
+      <Header />
+      <Sidebar />
     </>
   );
 };
-const Person = (props) => {
-  return <h2>{props.name}</h2>;
-};
 
-const Message = (props) => {
-  return <p>{props.message}</p>;
-};
 export default Test;
